@@ -31,7 +31,7 @@ func intToRoman(num int) string {
 		keySlice = append(keySlice, key)
 	}
 	sort.Sort(sort.Reverse(sort.IntSlice(keySlice)))
-	fmt.Println(keySlice)
+	//fmt.Println(keySlice)
 	result := ""
 	for i := 0; i < len(keySlice); i++ {
 		if num >= keySlice[i] {
